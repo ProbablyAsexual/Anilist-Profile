@@ -1,0 +1,7 @@
+/*This will change the AL logo in the top left into whatever image you want. Just replace the url with your desired image's url.*/
+
+.logo img[data-v-4fbac4e1] {
+    height: 50px;
+    width: 50px;
+    content: url(https://i.imgur.com/txz1IXI.png);
+}
