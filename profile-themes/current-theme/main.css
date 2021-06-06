@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.2
+    Charlie's Theme Version 1.2.1
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -115,9 +115,8 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 }
 
 .filter-group:first-child > span .count{
-    right: 10px
+    right: var(--curvyness) !important
 }
-
 /*favourites
 
 This makes the favourites more rounded and gives them their animation when hovered over.*/
