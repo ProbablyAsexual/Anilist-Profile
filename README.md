@@ -1,2 +1,3 @@
 This is my Anilist profile CSS. Hopefully by checking this out, I can help you with your own CSS journey, or give you some inspiration for your profile.
+The Profiles section contains full CSS files that can be used as standalone profiles. Whether you want to select specific parts of them to use, or you just want the whole thing, go ahead and use it to your heart's content. Just tell people I 'inspired' you or something like that ;)
 The Utilities section contains bits of code that could be used for any profile. For example, I have made on which gets rid of scrollbars for the About section and activity posts.
