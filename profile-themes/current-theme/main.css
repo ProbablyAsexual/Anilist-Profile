@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.1
+    Charlie's Theme Version 1.2
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -16,8 +16,8 @@ These can be changed at your own discretion. A short description of each variabl
     --youPout: url('https://i.imgur.com/xdXXRlh.png'); /*The URL for the logo image*/
     --headwidth: 90%; /*The width of the header and footer.*/
     --navwidth: 85%; /*The width of the content section.*/
-    --curvyness: 10px; /*How round rounded corners are: higher number = rounder*/
-    --boxOpacity: 0.2; /*How opaque the box behhind the content section is: higher number = less seethrough.*/
+    --curvyness: 15px; /*How round rounded corners are: higher number = rounder*/
+    --boxOpacity: 0.3; /*How opaque the box behhind the content section is: higher number = less seethrough.*/
     --background: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
 } 
 
@@ -93,12 +93,29 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     padding: 0%;
 }
 
-.overview[data-v-5c30286e]{
+.overview[data-v-5c30286e], .medialist[data-v-0567dd85], .favourites:not(.favourites[data-v-3f86aedd]), 
+.stats[data-v-1e00b9da], .user-social[data-v-e4963b98], .review-wrap[data-v-5e6a17b4], .submissions[data-v-3ed82f3f]{
     margin: 0% 0% 2% 0%;
     padding: 2% 5% 5% 5%;
     background-color: rgba(0,0,0,var(--boxOpacity));
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
+}
+
+.favourites[data-v-3f86aedd],.review-card[data-v-0369a0cf], .follow-card, .avatar[data-v-39573fe2],
+.bar-chart-wrap[data-v-46edc0ca], .pie-chart.vertical-layout[data-v-26dc9635], 
+.draggable[data-v-202815eb],.favourites-wrap[data-v-3f86aedd], .list-section, .filters,
+.el-input__inner, .random-btn[data-v-063397cc], .hohButton, .filter-group:first-child > span, .el-input,
+.content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c] {
+    border-radius: var(--curvyness) !important
+}
+
+.submissions[data-v-3ed82f3f]{
+    min-width: var(--navwidth)
+}
+
+.filter-group:first-child > span .count{
+    right: 10px
 }
 
 /*favourites
