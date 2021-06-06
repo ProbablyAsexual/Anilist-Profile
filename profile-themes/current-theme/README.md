@@ -1,5 +1,4 @@
-I haven't named this yet, since I only have one profile CSS style so far, but this is technically version 1.1,
-since I made a couple of major changes in the last couple of days after it went live.
+I haven't named this yet, since I only have one profile CSS style so far, but I'm calling it Charlie's theme for now.
 
 Special thanks to Bluetaku (https://anilist.co/user/Bluetaku) and Sleepy (https://anilist.co/user/sleepy) for putting up
 with my incessant questions about CSS, and to Anzu (https://anilist.co/user/Anzu) for being so generous as to have your own
