@@ -203,6 +203,13 @@ This gives the footer a similar design to the header.*/
     border-radius: var(--curvyness) var(--curvyness) 0px 0px;
 }
 
+/*This gets rid of the colour picker in the bottom right of the page. I have mine turned off by default anyway, but my profile
+looks better when it's removed so I'm adding this.*/
+
+.hohColourPicker{
+    visibility: hidden;
+}
+
 /*backgroundFix
 
 If you're using a custom background image, this section is required to use fancyFooter. 
