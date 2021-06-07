@@ -82,6 +82,7 @@ This removes the banner image, which makes the page look much nicer in my opinio
 This surrounds the overview, favourites previews, status posts, etc. with a transparent box and turns the navbar into a nice-looking top.*/
 
 .nav-wrap[data-v-4f7beb35]{
+    /*This curves the navbar above the content section.*/
     width: var(--navwidth);
     margin: auto;
     border-top-left-radius: var(--curvyness);
@@ -89,12 +90,14 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 }
 
 .content{
+    /*This ensures that all the content stays within the semi-opaque background.*/
     max-width: var(--navwidth);
     padding: 0%;
 }
 
 .overview[data-v-5c30286e], .medialist[data-v-0567dd85], .favourites:not(.favourites[data-v-3f86aedd]), 
 .stats[data-v-1e00b9da], .user-social[data-v-e4963b98], .review-wrap[data-v-5e6a17b4], .submissions[data-v-3ed82f3f]{
+    /*This section handles the semi-opaque background for each profile section.*/
     margin: 0% 0% 2% 0%;
     padding: 2% 5% 5% 5%;
     background-color: rgba(0,0,0,var(--boxOpacity));
@@ -107,16 +110,62 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .draggable[data-v-202815eb],.favourites-wrap[data-v-3f86aedd], .list-section, .filters,
 .el-input__inner, .random-btn[data-v-063397cc], .hohButton, .filter-group:first-child > span, .el-input,
 .content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c] {
+    /*This makes all the corners curved.*/
     border-radius: var(--curvyness) !important
 }
 
 .submissions[data-v-3ed82f3f]{
+    /*This is a fix for an annoying part of the submissions section.*/
     min-width: var(--navwidth)
 }
 
 .filter-group:first-child > span .count{
+    /*This moves the text of the list filters inwards so it doesn't clip through the curved border.*/
     right: var(--curvyness) !important
 }
+
+.theme-switch[data-v-0567dd85]{
+    /*This moves the theme switcher at the top right of media lists downwards.*/
+    margin-top: 20%
+}
+
+/*This section gives the navbar the underline when you hover over links. Thanks Anzu for that one.*/
+
+.nav > .link {
+    position: relative;
+}
+.nav > .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: rgb(var(--color-blue));
+    transition: all 0.3s ease-in-out;
+}
+.nav > .router-link-active::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+}
+.nav > .link:hover::after {
+    left: 0;
+    width: 100%;
+    background: rgb(var(--color-blue));
+}
+
+/*This hides part of the stats preview and reveals it when hovered over.*/
+
+.list-stats:nth-child(1), .list-stats:nth-child(2) {
+    height: calc(121px - 45px);
+    transition: all 1s ease-in-out;
+}
+.list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
+    height: 121px;
+    transition-duration: 1s;
+}
+
 /*favourites
 
 This makes the favourites more rounded and gives them their animation when hovered over.*/
