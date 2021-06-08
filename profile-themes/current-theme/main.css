@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.3.1
+    Charlie's Theme Version 1.3.2
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -119,7 +119,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .bar-chart-wrap[data-v-46edc0ca], .pie-chart.vertical-layout[data-v-26dc9635], 
 .draggable[data-v-202815eb],.favourites-wrap[data-v-3f86aedd], .list-section, .filters,
 .el-input__inner, .random-btn[data-v-063397cc], .hohButton, .filter-group:first-child > span, .el-input,
-.content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c] a.router-link-active[data-v-1e00b9da], .hohActive, .thread-card[data-v-70ae1ba4],
+.content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c] a.router-link-active, .hohActive, .thread-card[data-v-70ae1ba4],
 .hohSocialContent, .hohThemeSwitch{
     /*This makes all the corners curved.*/
     border-radius: var(--curvyness) !important
