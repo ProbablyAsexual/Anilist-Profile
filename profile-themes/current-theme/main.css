@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.3.2
+    Charlie's Theme Version 1.3.3
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -123,6 +123,11 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .hohSocialContent, .hohThemeSwitch{
     /*This makes all the corners curved.*/
     border-radius: var(--curvyness) !important
+}
+
+.content-wrap[data-v-5c30286e], .content-wrap[data-v-5c30286e]:hover{
+    /*This is a fix for an annoying problem where a vertical line appears on the side of the About section.*/
+    overflow-y: hidden!important
 }
 
 .filter-group:first-child > span .count{
