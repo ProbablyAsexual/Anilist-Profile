@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.3.3
+    Charlie's Theme Version 1.3.4
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -166,7 +166,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     background: rgb(var(--color-blue));
 }
 
-/*This hides part of the stats preview and reveals it when hovered over.*/
+/*This hides part of the stats preview and reveals it when hovered over. Thanks again, Anzu.*/
 
 .list-stats:nth-child(1), .list-stats:nth-child(2) {
     height: calc(121px - 45px);
@@ -175,6 +175,12 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
     height: 121px;
     transition-duration: 1s;
+}
+
+/*This makes the title text more readable.*/
+
+h2{
+    color: rgb(189,203,219) !important;
 }
 
 /*favourites
@@ -200,18 +206,19 @@ This makes the favourites more rounded and gives them their animation when hover
 This gives the footer a similar design to the header.*/
 
 .wrap[data-v-a5dce466]{
+    /*This makes the footer the same width as the header and centres it.*/
     max-width: var(--headwidth);
     margin: auto;
 }
 
 .footer[data-v-a5dce466]{
+    /*This curves the footer's corners.*/
     border-radius: var(--curvyness) var(--curvyness) 0px 0px;
 }
 
-/*This gets rid of the colour picker in the bottom right of the page. I have mine turned off by default anyway, but my profile
-looks better when it's removed so I'm adding this.*/
-
 .hohColourPicker{
+    /*This gets rid of the colour picker in the bottom right of the page. I have mine turned off by default anyway, but my profile
+    looks better when it's removed so I'm adding this.*/
     visibility: hidden;
 }
 
