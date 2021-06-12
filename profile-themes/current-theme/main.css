@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.3.5
+    Charlie's Theme Version 1.3.6
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -72,7 +72,8 @@ This customises the header.*/
     border-style: hidden;
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
-    left: calc((100% - var(--headwidth))/2)
+    left: calc((100% - var(--headwidth))/2);
+    background: rgb(21,31,46) !important
 }
 
 /*hideBanner
@@ -233,7 +234,7 @@ This gives the footer a similar design to the header.*/
 .footer[data-v-a5dce466]{
     /*This curves the footer's corners and lightens the background to the same color as the header.*/
     border-radius: var(--curvyness) var(--curvyness) 0px 0px;
-    background: #152232
+    background: rgb(21,31,46)
 }
 
 .hohColourPicker{
