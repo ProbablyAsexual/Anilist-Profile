@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.3.4
+    Charlie's Theme Version 1.3.5
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -21,6 +21,9 @@ These can be changed at your own discretion. A short description of each variabl
     --background: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
 } 
 
+
+
+
 /*noScroll
 This section makes the about section and activities display in full instead of having to scroll them.*/
 
@@ -34,6 +37,9 @@ This section makes the about section and activities display in full instead of h
     overflow: hidden;
 
 }
+
+
+
 
 /*logoChanger
 
@@ -53,11 +59,15 @@ If you don't want the animation, remove the line marked Animation, and the secon
     transform: rotate(360deg) scale(1.4);
 }
 
+
+
+
 /*header
 
-This makes the header bar look different; it curves the edges and allows space on the sides.*/
+This customises the header.*/
 
 .nav[data-v-4fbac4e1] {
+    /*This makes the header more rounded and narrower.*/
     width: var(--headwidth);
     border-style: hidden;
     border-bottom-left-radius: var(--curvyness);
@@ -67,7 +77,7 @@ This makes the header bar look different; it curves the edges and allows space o
 
 /*hideBanner
 
-This removes the banner image, which makes the page look much nicer in my opinion.*/
+This removes the banner image.*/
 
 .banner{
     visibility: hidden !important;
@@ -76,6 +86,9 @@ This removes the banner image, which makes the page look much nicer in my opinio
 .banner-content{
     visibility: visible !important;
 }
+
+
+
 
 /*niceContent
 
@@ -140,7 +153,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     margin-top: 20%
 }
 
-/*This section gives the navbar the underline when you hover over links. Thanks Anzu for that one.*/
+/*This section gives the navbar the underline when you hover over links. Thank Anzu for that one.*/
 
 .nav > .link {
     position: relative;
@@ -183,6 +196,9 @@ h2{
     color: rgb(189,203,219) !important;
 }
 
+
+
+
 /*favourites
 
 This makes the favourites more rounded and gives them their animation when hovered over.*/
@@ -201,6 +217,9 @@ This makes the favourites more rounded and gives them their animation when hover
     overflow: visible;
 }
 
+
+
+
 /*fancyFooter
 
 This gives the footer a similar design to the header.*/
@@ -212,8 +231,9 @@ This gives the footer a similar design to the header.*/
 }
 
 .footer[data-v-a5dce466]{
-    /*This curves the footer's corners.*/
+    /*This curves the footer's corners and lightens the background to the same color as the header.*/
     border-radius: var(--curvyness) var(--curvyness) 0px 0px;
+    background: #152232
 }
 
 .hohColourPicker{
@@ -221,6 +241,9 @@ This gives the footer a similar design to the header.*/
     looks better when it's removed so I'm adding this.*/
     visibility: hidden;
 }
+
+
+
 
 /*backgroundFix
 
@@ -230,6 +253,9 @@ If not, you can always leave this out, or you can add one by replacing the url w
 body{
     background: var(--background) center top / 100% fixed;
 }
+
+
+
 
 /*scrollbarFix
 
