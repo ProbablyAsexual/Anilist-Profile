@@ -140,9 +140,9 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     border-radius: var(--curvyness) !important
 }
 
-.el-textarea__inner{
-    /*This gives the text inputs borders, which is required for them to be curved.*/
-    border: 1px hidden
+.el-textarea{
+    /*This makes the curved input area in status replies work.*/
+    background: none
 }
 
 .content-wrap[data-v-5c30286e], .content-wrap[data-v-5c30286e]:hover{
