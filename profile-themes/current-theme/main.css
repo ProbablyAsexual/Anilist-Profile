@@ -109,11 +109,11 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     padding: 0%;
 }
 
-.overview[data-v-5c30286e], .medialist[data-v-0567dd85], .favourites:not(.favourites[data-v-3f86aedd]), 
+.overview[data-v-5c30286e], .medialist[data-v-0567dd85], .favourites:not(.favourites[data-v-3f86aedd], .favourites[data-v-ddf96a3c]), 
 .stats[data-v-1e00b9da], .user-social[data-v-e4963b98], .review-wrap[data-v-5e6a17b4]{
     /*This section handles the semi-opaque background for each profile section.*/
-    margin: 0% 0% 2% 0% !important;
-    padding: 2% 5% 5% 5% !important;
+    margin: 0% 0% 2% 0%;
+    padding: 2% 5% 5% 5%;
     background-color: rgba(0,0,0,var(--boxOpacity));
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
@@ -129,16 +129,27 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     border-bottom-right-radius: var(--curvyness);
 }
 
+.content[data-v-0369a0cf]{
+    /*A fix for the review section making the text centred properly.*/
+    max-width: 100% !important
+}
+
 .favourites[data-v-3f86aedd],.review-card[data-v-0369a0cf], .follow-card, .avatar[data-v-39573fe2],
 .bar-chart-wrap[data-v-46edc0ca], .pie-chart.vertical-layout[data-v-26dc9635], 
 .draggable[data-v-202815eb],.favourites-wrap[data-v-3f86aedd], .list-section, .filters,
 .el-input__inner, .random-btn[data-v-063397cc], .hohButton, .filter-group:first-child > span, .el-input,
 .content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c]  a.router-link-active, .hohActive, .thread-card[data-v-70ae1ba4],
-.hohSocialContent, .hohThemeSwitch, .filter-group a[data-v-1e00b9da], .button[data-v-c574a71c], 
-.primary-links[data-v-04b245e6], .reply[data-v-732ef224], .markdown-editor, .el-textarea__inner{
+.hohSocialContent, .hohThemeSwitch, .filter-group a[data-v-1e00b9da], .button[data-v-c574a71c], .primary-links[data-v-04b245e6], 
+.reply[data-v-732ef224], .markdown-editor, .theme-switch, .image{
     /*This makes all the corners curved.*/
     border-radius: var(--curvyness) !important
 }
+
+.el-textarea__inner{
+    border: 2px hidden;
+    border-radius: var(--curvyness) !important
+}
+
 
 .el-textarea{
     /*This makes the curved input area in status replies work.*/
@@ -203,25 +214,36 @@ h2{
     color: rgb(189,203,219) !important;
 }
 
+.title{
+    border-radius: 0px 0px var(--curvyness) var(--curvyness)
+}
+
 
 
 
 /*favourites
 
-This makes the favourites more rounded and gives them their animation when hovered over.*/
+This improves the favourites section a lot.*/
 
-.favourite[data-v-3f86aedd]{
+.favourite[data-v-ddf96a3c]{
+    /*This makes the picture curved and handles an important part of the transition.*/
     overflow: visible !important;
     border-radius: var(--curvyness);
 }
 
-.favourite[data-v-3f86aedd]:hover{
+.favourite[data-v-ddf96a3c]:hover{
+    /*This makes the image expand when hovered over.*/
     transform: scale(1.4);
     z-index: 100;
 }
 
-.favourites-wrap[data-v-3f86aedd]{
+.favourites-wrap[data-v-ddf96a3c]{
+    /*This makes the Favourites section more visually pleasing; it packs the images closer together, and curves the boxes.*/
     overflow: visible;
+    background: rgb(var(--color-foreground));
+    padding: 20px;
+    grid-gap: 10px;
+    border-radius: var(--curvyness)
 }
 
 
