@@ -134,6 +134,8 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     max-width: 100% !important
 }
 
+/*The following blocks make all the corners curved.*/
+
 .favourites[data-v-3f86aedd],.review-card[data-v-0369a0cf], .follow-card, .avatar[data-v-39573fe2],
 .bar-chart-wrap[data-v-46edc0ca], .pie-chart.vertical-layout[data-v-26dc9635], 
 .draggable[data-v-202815eb],.favourites-wrap[data-v-3f86aedd], .list-section, .filters,
@@ -141,8 +143,11 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c]  a.router-link-active, .hohActive, .thread-card[data-v-70ae1ba4],
 .hohSocialContent, .hohThemeSwitch, .filter-group a[data-v-1e00b9da], .button[data-v-c574a71c], .primary-links[data-v-04b245e6], 
 .reply[data-v-732ef224], .markdown-editor, .theme-switch, .image{
-    /*This makes all the corners curved.*/
     border-radius: var(--curvyness) !important
+}
+
+.medialist.cards .entry-card .title{
+    border-radius: 0px 0px var(--curvyness) var(--curvyness)
 }
 
 .el-textarea__inner{
@@ -212,10 +217,6 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 h2{
     color: rgb(189,203,219) !important;
-}
-
-.title{
-    border-radius: 0px 0px var(--curvyness) var(--curvyness)
 }
 
 
