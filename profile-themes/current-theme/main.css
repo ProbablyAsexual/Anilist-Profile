@@ -11,11 +11,11 @@
 These can be changed at your own discretion. A short description of each variable is provided.*/
 
 :root{
-    --logowidth: 50px; /*Height of the logo.*/
-    --logoheight: 45.42px; /*Width of the logo. I recommend you change this to fit the aspect ratio of the image you're using.*/
-    --youPout: url('https://i.imgur.com/xdXXRlh.png'); /*The URL for the logo image*/
-    --headwidth: 90%; /*The width of the header and footer.*/
-    --navwidth: 85%; /*The width of the content section.*/
+    --logoWidth: 50px; /*Height of the logo.*/
+    --logoHeight: 45.42px; /*Width of the logo. I recommend you change this to fit the aspect ratio of the image you're using.*/
+    --logoReplacment: url('https://i.imgur.com/xdXXRlh.png'); /*The URL for the logo image*/
+    --headWidth: 90%; /*The width of the header and footer.*/
+    --navWidth: 85%; /*The width of the content section.*/
     --curvyness: 15px; /*How round rounded corners are: higher number = rounder*/
     --boxOpacity: 0.3; /*How opaque the box behhind the content section is: higher number = less seethrough.*/
     --background: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
@@ -49,9 +49,9 @@ It also gives the image an animation when you hover over it; it enlarges and spi
 If you don't want the animation, remove the line marked Animation, and the second code block (the one with 'hover' at the top).*/
 
 .logo img[data-v-4fbac4e1] {
-    width: var(--logowidth);
-    height: var(--logoheight);
-    content: var(--youPout);
+    width: var(--logoWidth);
+    height: var(--logoHeight);
+    content: var(--logoReplacment);
     transition: transform 2.0s; /*Animation*/
 }
 
@@ -68,11 +68,11 @@ This customises the header.*/
 
 .nav[data-v-4fbac4e1] {
     /*This makes the header more rounded and narrower.*/
-    width: var(--headwidth);
+    width: var(--headWidth);
     border-style: hidden;
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
-    left: calc((100% - var(--headwidth))/2);
+    left: calc((100% - var(--headWidth))/2);
     background: rgb(21,31,46) !important
 }
 
@@ -97,7 +97,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 .nav-wrap[data-v-4f7beb35]{
     /*This curves the navbar above the content section.*/
-    width: var(--navwidth);
+    width: var(--navWidth);
     margin: auto;
     border-top-left-radius: var(--curvyness);
     border-top-right-radius: var(--curvyness);
@@ -105,7 +105,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 .content{
     /*This ensures that all the content stays within the semi-opaque background.*/
-    max-width: var(--navwidth);
+    max-width: var(--navWidth);
     padding: 0%;
 }
 
@@ -147,14 +147,13 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 }
 
 .medialist.cards .entry-card .title{
-    border-radius: 0px 0px var(--curvyness) var(--curvyness)
+    border-radius: 0px 0px var(--curvyness) var(--curvyness) !important;
 }
 
 .el-textarea__inner{
     border: 2px hidden;
     border-radius: var(--curvyness) !important
 }
-
 
 .el-textarea{
     /*This makes the curved input area in status replies work.*/
@@ -256,7 +255,7 @@ This gives the footer a similar design to the header.*/
 
 .wrap[data-v-a5dce466]{
     /*This makes the footer the same width as the header and centres it.*/
-    max-width: var(--headwidth);
+    max-width: var(--headWidth);
     margin: auto;
 }
 
