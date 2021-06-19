@@ -1,3 +1,5 @@
+/*This lets you set the font on your profile to any font you can find. Simply put a different url in place of the one below,
+and replace the font name with the name of your chosen font.*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body {
   font-family: 'Quicksand', sans-serif;
