@@ -10,7 +10,7 @@ CSS public, which helped me particularly with variable syntax at the end.
 If you're using this as a basis for your own profile and you have a question about any of it, feel free to drop me a message
 on Anilist or Discord and I'll help you to the best of my ability.
 
-##**Changelog**
+## **Changelog**
 
 **23/06/21 (1.4.0)**
 - Started doing a changelog
