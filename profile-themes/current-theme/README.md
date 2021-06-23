@@ -1,4 +1,4 @@
-##**Foreword**
+<h2>**Foreword**<h2>
 
 I haven't named this yet, since I only have one profile CSS style so far, but this is technically version 1.1,
 since I made a couple of major changes in the last couple of days after it went live.
@@ -10,7 +10,7 @@ CSS public, which helped me particularly with variable syntax at the end.
 If you're using this as a basis for your own profile and you have a question about any of it, feel free to drop me a message
 on Anilist or Discord and I'll help you to the best of my ability.
 
-##**Changelog**
+<h2>**Changelog**<h2>
 
 **23/06/21 (1.4.0)**
 *Started doing a changelog
