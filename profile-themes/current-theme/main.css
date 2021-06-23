@@ -11,14 +11,21 @@
 These can be changed at your own discretion. A short description of each variable is provided.*/
 
 :root{
-    --logoWidth: 50px; /*Height of the logo.*/
-    --logoHeight: 45.42px; /*Width of the logo. I recommend you change this to fit the aspect ratio of the image you're using.*/
-    --logoReplacment: url('https://i.imgur.com/xdXXRlh.png'); /*The URL for the logo image*/
-    --headWidth: 90%; /*The width of the header and footer.*/
-    --navWidth: 85%; /*The width of the content section.*/
+    --logo-width: 50px; /*Height of the logo.*/
+    --logo-height: 45.42px; /*Width of the logo. I recommend you change this to fit the aspect ratio of the image you're using.*/
+    --logo-replacement: url('https://i.imgur.com/xdXXRlh.png'); /*The URL for the logo image.*/
+    --logo-rotate: 360deg; /*How much the logo rotates when hovered over. I recommend 360°, but you can change it if you want.*/
+    --logo-transition-time: 2.0s; /*How long it takes the logo to scale and rotate when hovered over.*/
+    --logo-scale: 1.4; /*How much the logo scales when hovered over.*/
+    --head-width: 90%; /*The width of the header and footer.*/
+    --nav-width: 85%; /*The width of the content section.*/
     --curvyness: 15px; /*How round rounded corners are: higher number = rounder*/
-    --boxOpacity: 0.3; /*How opaque the box behhind the content section is: higher number = less seethrough.*/
-    --background: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
+    --box-opacity: 0.3; /*How opaque the box behhind the content section is: higher number = less seethrough.*/
+    --underline-time: 0.7s; /*How long it takes for navbar links to be underlined.*/
+    --stats-transition-time: 1.0s; /*How long it takes for the stats section to expand when hovered over.*/
+    --background-img: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
+    --favourite-scale: 1.4; /*How much the favourite images scale when hovered over.*/
+    --favourite-time: 0.2s;/*The time taken for the favourite animation to finish.*/
 } 
 
 
@@ -49,14 +56,14 @@ It also gives the image an animation when you hover over it; it enlarges and spi
 If you don't want the animation, remove the line marked Animation, and the second code block (the one with 'hover' at the top).*/
 
 .logo img[data-v-4fbac4e1] {
-    width: var(--logoWidth);
-    height: var(--logoHeight);
-    content: var(--logoReplacment);
-    transition: transform 2.0s; /*Animation*/
+    width: var(--logo-width);
+    height: var(--logo-height);
+    content: var(--logo-replacement);
+    transition: transform var(--logo-transition-time); /*Animation*/
 }
 
 .logo img[data-v-4fbac4e1]:hover{
-    transform: rotate(360deg) scale(1.4);
+    transform: rotate(var(--logo-rotate)) scale(var(--logo-scale));
 }
 
 
@@ -68,11 +75,11 @@ This customises the header.*/
 
 .nav[data-v-4fbac4e1] {
     /*This makes the header more rounded and narrower.*/
-    width: var(--headWidth);
+    width: var(--head-width);
     border-style: hidden;
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
-    left: calc((100% - var(--headWidth))/2);
+    left: calc((100% - var(--head-width))/2);
     background: rgb(21,31,46) !important
 }
 
@@ -97,7 +104,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 .nav-wrap[data-v-4f7beb35]{
     /*This curves the navbar above the content section.*/
-    width: var(--navWidth);
+    width: var(--nav-width);
     margin: auto;
     border-top-left-radius: var(--curvyness);
     border-top-right-radius: var(--curvyness);
@@ -105,7 +112,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 .content{
     /*This ensures that all the content stays within the semi-opaque background.*/
-    max-width: var(--navWidth);
+    max-width: var(--nav-width);
     padding: 0%;
 }
 
@@ -114,7 +121,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     /*This section handles the semi-opaque background for each profile section.*/
     margin: 0% 0% 2% 0%;
     padding: 2% 5% 5% 5%;
-    background-color: rgba(0,0,0,var(--boxOpacity));
+    background-color: rgba(0,0,0,var(--box-opacity));
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
 }
@@ -124,7 +131,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     min-width: 100%;
     margin: 0% 0% 2% 0% !important;
     padding: 2% 5% 5% 5% !important;
-    background-color: rgba(0,0,0,var(--boxOpacity));
+    background-color: rgba(0,0,0,var(--box-opacity));
     border-bottom-left-radius: var(--curvyness);
     border-bottom-right-radius: var(--curvyness);
 }
@@ -142,7 +149,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 .el-input__inner, .random-btn[data-v-063397cc], .hohButton, .filter-group:first-child > span, .el-input,
 .content-wrap, .wrap[data-v-1bf2cf4e], .input[data-v-c574a71c]  a.router-link-active, .hohActive, .thread-card[data-v-70ae1ba4],
 .hohSocialContent, .hohThemeSwitch, .filter-group a[data-v-1e00b9da], .button[data-v-c574a71c], .primary-links[data-v-04b245e6], 
-.reply[data-v-732ef224], .markdown-editor, .theme-switch, .image{
+.reply[data-v-732ef224], .markdown-editor, .theme-switch, .image, img, .youtube, blockquote, .embed[data-v-13cdaed6]{
     border-radius: var(--curvyness) !important
 }
 
@@ -188,7 +195,7 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
     height: 2px;
     width: 0;
     background: rgb(var(--color-blue));
-    transition: all 0.3s ease-in-out;
+    transition: all var(--underline-time) ease;
 }
 .nav > .router-link-active::after {
     left: 0;
@@ -205,11 +212,11 @@ This surrounds the overview, favourites previews, status posts, etc. with a tran
 
 .list-stats:nth-child(1), .list-stats:nth-child(2) {
     height: calc(121px - 45px);
-    transition: all 1s ease-in-out;
+    transition: all var(--stats-transition-time) ease-in-out;
 }
 .list-stats:nth-child(1):hover, .list-stats:nth-child(2):hover {
     height: 121px;
-    transition-duration: 1s;
+    transition-duration: var(--stats-transition-time);
 }
 
 /*This makes the title text more readable.*/
@@ -229,11 +236,13 @@ This improves the favourites section a lot.*/
     /*This makes the picture curved and handles an important part of the transition.*/
     overflow: visible !important;
     border-radius: var(--curvyness);
+    transition: var(--favourite-time);
 }
 
 .favourite[data-v-ddf96a3c]:hover{
     /*This makes the image expand when hovered over.*/
-    transform: scale(1.4);
+    transform: scale(var(--favourite-scale));
+    overflow: visible;
     z-index: 100;
 }
 
@@ -243,7 +252,7 @@ This improves the favourites section a lot.*/
     background: rgb(var(--color-foreground));
     padding: 20px;
     grid-gap: 10px;
-    border-radius: var(--curvyness)
+    border-radius: var(--curvyness);
 }
 
 
@@ -255,14 +264,14 @@ This gives the footer a similar design to the header.*/
 
 .wrap[data-v-a5dce466]{
     /*This makes the footer the same width as the header and centres it.*/
-    max-width: var(--headWidth);
+    max-width: var(--head-width);
     margin: auto;
 }
 
 .footer[data-v-a5dce466]{
     /*This curves the footer's corners and lightens the background to the same color as the header.*/
     border-radius: var(--curvyness) var(--curvyness) 0px 0px;
-    background: rgb(21,31,46)
+    background: rgb(21,31,46);
 }
 
 .hohColourPicker{
@@ -280,7 +289,7 @@ If you're using a custom background image, this section is required to use fancy
 If not, you can always leave this out, or you can add one by replacing the url with your own.*/
 
 body{
-    background: var(--background) center top / 100% fixed;
+    background: var(--background-img) center top / 100% fixed;
 }
 
 
@@ -290,6 +299,27 @@ body{
 
 This is required if you're using backgroundFix. If you're not, don't bother adding this bit.*/
 
+::-webkit-scrollbar-thumb{
+    background: rgb(var(--color-blue))
+}
+
 ::-webkit-scrollbar-track{
-    background:#151F2E;
+    background: rgb(21,31,46);
+}
+
+/*colorLinks
+
+This makes links turn blue on hover.*/
+
+.primary-link-text[data-v-38edf8f8]{
+    color: rgb(173,192,210)
+}
+
+.primary-link, .secondary-link, .footer[data-v-38edf8f8]{
+    --color-gray-800: var(--color-blue) !important;
+    --color-gray-900: var(--color-blue) !important;
+}
+
+.link[data-v-4fbac4e1]:hover{
+    color: rgb(var(--color-blue)) !important;
 }
