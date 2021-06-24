@@ -19,7 +19,7 @@ on Anilist or Discord and I'll help you to the best of my ability.
     - Edited the markdown CSS for spoiler tags to prevent the cursor from reverting when hovering over them.
 
 **23/06/21 (1.4.0)**
-- Started doing a changelog
-- Added custom cursor option
-- Added code to colour links blue when hovered over
-- Made most numbers into variables to make customisation and editing easier
+- Started doing a changelog.
+- Added custom cursor option.
+- Added code to colour links blue when hovered over.
+- Made most numbers into variables to make customisation and editing easier.
