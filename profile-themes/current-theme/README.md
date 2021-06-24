@@ -12,6 +12,12 @@ on Anilist or Discord and I'll help you to the best of my ability.
 
 ## **Changelog**
 
+**24/06/21 (1.4.1)**
+- Added some more comments in specific code blocks.
+- Made changes to the cursor function.
+    - Added an !important tag to keep the cursor constant over every element.
+    - Edited the markdown CSS for spoiler tags to prevent the cursor from reverting when hovering over them.
+
 **23/06/21 (1.4.0)**
 - Started doing a changelog
 - Added custom cursor option

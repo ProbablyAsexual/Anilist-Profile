@@ -301,10 +301,12 @@ body{
 This is required if you're using backgroundFix. If you're not, don't bother adding this bit.*/
 
 ::-webkit-scrollbar-thumb{
+    /*This handles the 'thumb', or the bit that you click and drag.*/
     background: rgb(var(--color-blue))
 }
 
 ::-webkit-scrollbar-track{
+    /*This handles the 'track', or the line along which the thumb slides.*/
     background: rgb(21,31,46);
 }
 
@@ -313,22 +315,31 @@ This is required if you're using backgroundFix. If you're not, don't bother addi
 This makes links turn blue on hover.*/
 
 .primary-link-text[data-v-38edf8f8]{
+    /*This makes the link the right colour when it is not interacted with.*/
     color: rgb(173,192,210)
 }
 
 .primary-link, .secondary-link, .footer[data-v-38edf8f8]{
+    /*This sets the color that the text usually goes when hovered over to the profile them color.*/
     --color-gray-800: var(--color-blue) !important;
     --color-gray-900: var(--color-blue) !important;
 }
 
 .link[data-v-4fbac4e1]:hover{
+    /*This handles the links that aren't covered by the above block.*/
     color: rgb(var(--color-blue)) !important;
 }
 
 /*customCursor
 
-This turns the cursor into an image of your choice.*/
+This turns the cursor into a custom image.*/
 
 *{
-    cursor: var(--cursor-url), auto;
+    /*This sets the cursor to the custom one for every element, including text and hyperlinks.*/
+    cursor: var(--cursor-url), auto !important;
+}
+
+.markdown-spoiler:before{
+    /*This fixes the issue of spoiler tags reverting the cursor to the original.*/
+    cursor: auto;
 }
