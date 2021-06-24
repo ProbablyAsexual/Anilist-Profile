@@ -25,7 +25,7 @@ These can be changed at your own discretion. A short description of each variabl
     --stats-transition-time: 1.0s; /*How long it takes for the stats section to expand when hovered over.*/
     --background-img: url('https://i.imgur.com/TyQm8h4.jpg'); /*The URL of the background image.*/
     --favourite-scale: 1.4; /*How much the favourite images scale when hovered over.*/
-    --favourite-time: 0.2s;/*The time taken for the favourite animation to finish.*/
+    --favourite-time: 0.2s; /*The time taken for the favourite animation to finish.*/
     --cursor-url: url('https://i.imgur.com/BNwfQdH.png'); /*The URL for a custom cursor. Make sure the resolution is around 32x32.*/
 } 
 
