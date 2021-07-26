@@ -1,6 +1,6 @@
 /*Foreword
 
-    Charlie's Theme Version 1.4.0
+    Charlie's Theme Version 1.4.2
         By ProbablyAsexual: https://anilist.co/user/ProbablyAsexual
         Github: https://github.com/ProbablyAsexual/
         Discord: UncivilPizza#5112
@@ -103,7 +103,7 @@ This removes the banner image.*/
 
 This surrounds the overview, favourites previews, status posts, etc. with a transparent box and turns the navbar into a nice-looking top.*/
 
-.nav-wrap[data-v-4f7beb35]{
+.nav-wrap[data-v-2431f6d8]{
     /*This curves the navbar above the content section.*/
     width: var(--nav-width);
     margin: auto;

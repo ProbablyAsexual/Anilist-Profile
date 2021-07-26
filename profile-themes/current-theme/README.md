@@ -12,6 +12,9 @@ on Anilist or Discord and I'll help you to the best of my ability.
 
 ## **Changelog**
 
+**26/07/21 (1.4.2)**
+- Fixed an issue with the content navbar not being the same width as the content section
+
 **24/06/21 (1.4.1)**
 - Added some more comments in specific code blocks
 - Made changes to the cursor function
@@ -23,3 +26,4 @@ on Anilist or Discord and I'll help you to the best of my ability.
 - Added custom cursor option
 - Added code to colour links blue when hovered over
 - Made most numbers into variables to make customisation and editing easier
+
