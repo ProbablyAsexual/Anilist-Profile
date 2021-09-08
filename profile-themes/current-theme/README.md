@@ -12,7 +12,10 @@ on Anilist or Discord and I'll help you to the best of my ability.
 
 ## **Changelog**
 
-**08/09/21 (1.4.2)**
+**08/09/21 (1.4.4)**
+- Added the code to curve the corners of the pinned activity
+
+**08/09/21 (1.4.3)**
 - Had to re-fix the navbar, since the staff keep changing the element name for some reason
 
 **26/07/21 (1.4.2)**
