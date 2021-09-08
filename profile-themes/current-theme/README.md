@@ -12,6 +12,9 @@ on Anilist or Discord and I'll help you to the best of my ability.
 
 ## **Changelog**
 
+**08/09/21 (1.4.2)**
+- Had to re-fix the navbar, since the staff keep changing the element name for some reason
+
 **26/07/21 (1.4.2)**
 - Fixed an issue with the content navbar not being the same width as the content section
 
